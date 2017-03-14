@@ -1,0 +1,109 @@
+.selector-for-some-widget {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+header a img.logo{
+    margin-left: 2vw;
+}
+
+div#content {
+}
+
+div.form-group{
+    position: relative;
+    text-align: center;
+    height: auto;
+}
+
+div.form-group h1{
+    color:#fff;
+    font-weight: 400 !important;
+    margin: 0;
+    padding-top: 1vw;
+}
+
+div#form{
+    margin-top: 8vw;
+}
+
+div#result{
+    margin-top: 4vw;
+}
+
+/*div.score{
+    position: relative;
+    height: 8vw;
+}*/
+
+/*div.score label{
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 0vw;
+    position: relative;
+    top: 30%;
+}*/
+
+/*div.score div{
+    position: absolute;
+    left: 47%;
+    border-radius: 50%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    width: 5vw;
+    height: 5vw;
+    background-color: #229922;
+}*/
+
+div.row{
+    color:#fff;  
+}
+
+img.bg {
+    min-height: 30%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 11,5%;
+    left: 0;
+    z-index: -9;
+}
+
+img.bg-md {
+    min-height: 30%;
+    min-width: 180px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 11,5%;
+    left: 0;
+    z-index: -9;
+}
+
+img.filter {
+    opacity: 0.5; 
+    filter: alpha(opacity=50);    
+    z-index: -2;
+}
+
+@media (min-width: 544px) {  
+  h1 {font-size:1.5rem;} /*1rem = 16px*/
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+  h1 {font-size:2rem;} /*1rem = 16px*/
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  h1 {font-size:2.5rem;} /*1rem = 16px*/
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+  h1 {font-size:3rem;} /*1rem = 16px*/    
+}
