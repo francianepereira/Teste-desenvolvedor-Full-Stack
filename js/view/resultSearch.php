@@ -8,19 +8,24 @@
         <div class="row">
             <div class="col-12 score">
                 <h5>Score:</h5>
-                <span class="badge"></span>
+                <span class="badge badge-pill badge-success"></span>
             </div>
         </div>
         <div class="row">
             <div class="col-12">
                 <h5>Número do Endereço:</h5>
-                <span class="badge number-address"></span>
+                <span class="badge badge-pill number-address badge-primary"></span>
             </div>
         </div>
         <div class="row">
             <div class="col-12">
                 <h5>Endereço IP:</h5>
-                <span class="badge ip-address-user"><?php echo $_SERVER["REMOTE_ADDR"]; ?></span>
+                <span class="badge badge-pill ip-address-user badge-warning"><?php echo $_SERVER["REMOTE_ADDR"]; ?></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="back">
+                <a href="./index.php" class="btn btn-primary">Voltar</a>
             </div>
         </div>
     </div>

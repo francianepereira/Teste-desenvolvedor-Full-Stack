@@ -6,9 +6,11 @@
     <h1>Teste desenvolvedor Full Stack</h1>
     <div id="form" class="container">
         <form action="action" class="">
+            <div id="message-error" class="form-control-feedback alert alert-danger hide"></div>
             <div class="row">
                 <div class="col-md-4">
                     <input class="validate form-control form-control-success form-control-danger" type="email" id="email" placeholder="Digite seu e-mail"/> 
+                    
                     <input type="hidden" id="score" />
                 </div>
                 <div class="col-md-5">
