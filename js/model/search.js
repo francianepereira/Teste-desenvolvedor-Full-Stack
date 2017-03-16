@@ -7,7 +7,6 @@ var search = {
                 type: 'POST',
                 data: "address="+address+"&email="+email+"&score="+score+"",
                 success: function(json) {
-                    console.log(json);
                     callback(json);
                 },
                 error: function (jqXHR, textStatus, errorThrown) {                    

@@ -23,9 +23,12 @@ function send_email($from, $to, $token) {
 function get_number_address($address) {
     $number = null;
     $array_address = explode(",", $address);
-    foreach ($array_address as $value) {
-        if (is_numeric($value)) {
-            $number = $value;
+    if (is_numeric($array_address[1])) {
+        $number = $array_address[1];
+    } else {
+        $array_number = explode(" ", trim($array_address[1]));
+        if (is_numeric($array_number[0])) {
+            $number = $array_number[0];
         }
     }
     if ($number == null) {
@@ -44,7 +47,7 @@ try {
     }
 } catch (Exception $e) {
     if ($e->getCode() == 103 && $score_email != "0.8")
-        $json = array('email' => NULL, 'address' => NULL, 'status' => 'Error', 'numbererror' => 105, 'error' => array("E-mail incorreto",$e->getMessage()));
+        $json = array('email' => NULL, 'address' => NULL, 'status' => 'Error', 'numbererror' => 105, 'error' => array("E-mail incorreto", $e->getMessage()));
     else
         $json = array('email' => NULL, 'address' => NULL, 'status' => 'Error', 'numbererror' => $e->getCode(), 'error' => $e->getMessage());
 }
